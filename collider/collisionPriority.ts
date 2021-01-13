@@ -1,9 +1,9 @@
 
 /** Приоритет коллизии */
-export class CollisionPriority
+export enum CollisionPriority
 {
-    static ENABLED: number = 0;
-    static STATIC: number = 1;
-    static DISABLED: number = 2;
+    ENABLED = 0,
+    STATIC = 1,
+    DISABLED = 2,
 }
 

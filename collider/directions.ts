@@ -1,9 +1,9 @@
 /** Перечисление направлений */
-export class Directions
+export enum Directions
 {
-    static RIGHT: number = 0;
-    static LEFT: number = 1;
-    static TOP: number = 2;
-    static BOTTOM: number = 3;
-    static UNDEFINED: number = 4;
+    RIGHT = 0,
+    LEFT = 1,
+    TOP = 2,
+    BOTTOM = 3,
+    UNDEFINED = 4,
 }

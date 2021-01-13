@@ -1,11 +1,11 @@
 import {} from "./entities.js"
 
 //TODO: Чё эта?
-export class EntityType
+export enum EntityType
 {
-    static MAP_TILE: number = 0;
-    static PLAYER: number = 1;
-    static ATTACK: number = 2;
-    static UNDEFINED: number = 3;
+    MAP_TILE = 0,
+    PLAYER = 1,
+    ATTACK = 2,
+    UNDEFINED = 3,
 }
  
