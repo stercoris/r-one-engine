@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es6",      
+    "removeComments": true,  
+    "module": "es6",              
+    //"outDir": "D:\\OpenServer\\domains\\wrongdoor.ddns.net\\r1engine\\",                        
+    "sourceMap": true,
+    "noImplicitAny": false,
+  }
+}
