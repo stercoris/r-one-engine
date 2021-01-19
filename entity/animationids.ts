@@ -1,10 +1,10 @@
 
-export enum AnimationIds
+export class AnimationIds
 {
-    IDLE = 0,
-    RUN = 1,
-    STATIC = 2,
-    JUMP = 3,
-    CROUCH = 4,
-    DEAD = 5,
+    static IDLE = 0;
+    static RUN = 1;
+    static STATIC = 2;
+    static JUMP = 3;
+    static CROUCH = 4;
+    static DEAD = 5;
 }

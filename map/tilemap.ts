@@ -126,7 +126,7 @@ export class TileMap extends GameMap
         this.max_w = rows.reduce(function (a, b) {return a.length > b.length ? a : b;}).length * this.size;
         
     }
-
+    
     setOffset(x, y)
     {
         // Смещение направо + планируемое смещение ИИИ смещение направо + ширина карты больше 0

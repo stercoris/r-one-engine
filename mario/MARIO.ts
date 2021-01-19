@@ -1,10 +1,14 @@
 import { EntityAnimation, FrameWH, AnimationIds, Frame } from "../entity/entities.js";
+import { FollowParams, FollowMehod } from "../map/follow_methods.js";
 
 
 export class MarioAnimationsIds extends AnimationIds
 {
     // Сюда новые анимации втавлять
 };
+
+
+
 
 export let MARIO_ANIMATIONS = 
 [
@@ -26,3 +30,9 @@ export let MARIO_ANIMATIONS =
     ),
 
 ];
+
+
+export let FOLLOW_PARAMS = new FollowParams(
+    new Frame(16, 16, 500, 256),
+    FollowMehod.SlowReaction
+)

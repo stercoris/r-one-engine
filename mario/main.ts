@@ -6,8 +6,8 @@ import { EntityCollider } from "../collider/collider.js";
 
 // импорт не из движка //
 import { GAME_MAP, TILE_LIST} from "./MAIN_MAP.js";
-import { TIMON_ANIMATIONS } from "./TIMON.js";
-import { MARIO_ANIMATIONS, MarioAnimationsIds } from "./MARIO.js"
+//import { TIMON_ANIMATIONS } from "./TIMON.js";
+import { MARIO_ANIMATIONS, MarioAnimationsIds, FOLLOW_PARAMS } from "./MARIO.js"
 
 
 /** Канвас */
@@ -37,6 +37,7 @@ document.body.onload = function setup() {
         Collider.add(tile);
     });
 
+
     //TIMON = new InteractiveEntity(7, 4, timon, new FrameWH(200,200,50,50), CollisionPriority.ENABLED, undefined, TIMON_ANIMATIONS);
     MARIO = new InteractiveEntity(3, 4, 
         mario, new FrameWH(200,200,15,16), 
@@ -45,6 +46,8 @@ document.body.onload = function setup() {
         undefined, 
         MARIO_ANIMATIONS
     );
+    MAP.setPointer(MARIO, FOLLOW_PARAMS);
+
 
 
     //Collider.add(TIMON);
@@ -69,19 +72,9 @@ async function logic(){
         MARIO.addImpact(Directions.UNDEFINED,Directions.TOP, 0, 0.4)
     
 
-        
-    if(MARIO.position.x > 300)
-    {
-        MAP.setOffset(-MARIO.accelerationX,0)
-        MARIO.position.x = 300;
-    }else if(MARIO.position.x < 0)
-    {
-        MARIO.position.x = 0;
-    }
-    
     MAP.clear();
-    MAP.draw();
-    MARIO.draw(ctx);
+    await MAP.draw();
+    //MARIO.draw(ctx);
 
     Collider.collide();
 }

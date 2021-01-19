@@ -1,9 +1,9 @@
 /** Перечисление направлений */
 export enum Directions
 {
-    RIGHT = 0,
-    LEFT = 1,
-    TOP = 2,
-    BOTTOM = 3,
-    UNDEFINED = 4,
+    RIGHT = 1,
+    LEFT = 2,
+    TOP = 3,
+    BOTTOM = 4,
+    UNDEFINED = 5,
 }
