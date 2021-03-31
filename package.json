@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "ts-loader": "^8.1.0"
+  },
+  "name": "r-one-engine",
+  "version": "1.0.0",
+  "description": "engine?",
+  "main": "mario/main.ts",
+  "repository": "https://github.com/stercoris/r-one-engine",
+  "author": "dima",
+  "license": "MIT",
+  "private": false
+}
