@@ -1,4 +1,4 @@
-export { GameMap } from "./map.js"
-export { Tile, TileWH } from "./tile.js"
-export { TileMap } from "./tilemap.js"
-export { TileList } from "./tiles.js"
+export { GameMap } from "./map";
+export { Tile, TileWH } from "./tile";
+export { TileMap } from "./tilemap";
+export { TileList } from "./tiles";

@@ -1,3 +1,3 @@
-export { Collision } from "./collision.js"
-export { CollisionPriority } from "./collisionPriority.js"
-export { Directions } from "./directions.js"
+export { Collision } from "./collision";
+export { CollisionPriority } from "./collisionPriority";
+export { Directions } from "./directions";

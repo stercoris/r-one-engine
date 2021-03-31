@@ -1,6 +1,6 @@
-export { EntityAnimation } from "./animation.js"
-export { Entity } from "./entity.js"
-export { EntityType } from "./entityType.js"
-export { InteractiveEntity } from "./interactiveEntity.js"
-export { Frame, FrameWH } from "./frame.js"
-export { AnimationIds } from "./animationids.js"
+export { EntityAnimation } from "./animation";
+export { Entity } from "./entity";
+export { EntityType } from "./entityType";
+export { InteractiveEntity } from "./interactiveEntity";
+export { Frame, FrameWH } from "./frame";
+export { AnimationIds } from "./animationids";

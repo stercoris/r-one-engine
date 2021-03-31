@@ -1,6 +1,6 @@
-import { Entity } from "./entity/entity.js"
+import { Entity } from "./entity/entity";
 
-export * as Collider from "./collider/collisions.js"
-export * as Entity from "./entity/entities.js"
-export * as Map from "./map/maps.js"
-export * as Keys from "./movment/arrows.js"
+export * as Collider from "./collider/collisions";
+export * as Entity from "./entity/entities";
+export * as Map from "./map/maps";
+export * as Keys from "./movment/arrows";

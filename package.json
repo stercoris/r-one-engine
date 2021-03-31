@@ -1,6 +1,10 @@
 {
+  "scripts": {
+    "serve": "webpack"
+  },
   "devDependencies": {
-    "ts-loader": "^8.1.0"
+    "ts-loader": "^8.1.0",
+    "webpack-cli": "^4.6.0"
   },
   "name": "r-one-engine",
   "version": "1.0.0",
@@ -9,5 +13,9 @@
   "repository": "https://github.com/stercoris/r-one-engine",
   "author": "dima",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "typescript": "^4.2.3",
+    "webpack": "^5.28.0"
+  }
 }

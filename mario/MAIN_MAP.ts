@@ -1,21 +1,21 @@
-import { TileList, TileWH } from "../map/maps.js";
-import { CollisionPriority } from "../collider/collisionPriority.js";
+import { TileList, TileWH } from "../map/maps";
+import { CollisionPriority } from "../collider/collisionPriority";
 
 let GAME_MAP = `
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-|                                                                                                                                      |
-|                                                                                                                                      |
-|                      обл                                                                                                             |
-|        обл           аки       обббл                                                                                                 |
-|        аки                     аккки                                                                                                 |
-|                         +                                                                                                            |
-|                                                                                                                                      |
-|                                                                                                                                      |
-|                                                                                                                                      |
-|                    +  %+%+%                                                                                                          |
-|    y                                                                                                                                 |
-|   brg                y                                                                                                               |
-|  booog         kssstbrg  kst                                                                                                         |
+|                                                                                                                                        |
+|                                                                                                                                        |
+|                      обл                                                                                                               |
+|        обл           аки       обббл                                                                                                   |
+|        аки                     аккки                                                                                                   |
+|                         +                                                                                                              |
+|                                                                                                                                        |
+|                                                                                                                                        |
+|                                                                                                                                        |
+|                    +  %+%+%                                                                                                            |
+|    y                                                                                                                                   |
+|   brg                y                                                                                                                 |
+|  booog         kssstbrg  kst                                                                                                           |
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@`;
 
@@ -34,11 +34,11 @@ TILE_LIST.addTile(new TileWH(48, 0, 16, 16, CollisionPriority.STATIC, "+")); //
  */
 
 TILE_LIST.addTile(new TileWH(64, 0, 16, 16, CollisionPriority.DISABLED, "о"));
-TILE_LIST.addTile(new TileWH(80, 0, 16, 16, CollisionPriority.DISABLED, "б"));
+TILE_LIST.addTile(new TileWH(80, 0, 16, 16, CollisionPriority.STATIC, "б"));
 TILE_LIST.addTile(new TileWH(96, 0, 16, 16, CollisionPriority.DISABLED, "л"));
-TILE_LIST.addTile(new TileWH(64, 16, 16, 16, CollisionPriority.DISABLED, "а"));
-TILE_LIST.addTile(new TileWH(80, 16, 16, 16, CollisionPriority.DISABLED, "к"));
-TILE_LIST.addTile(new TileWH(96, 16, 16, 16, CollisionPriority.DISABLED, "и"));
+TILE_LIST.addTile(new TileWH(64, 16, 16, 16, CollisionPriority.STATIC, "а"));
+TILE_LIST.addTile(new TileWH(80, 16, 16, 16, CollisionPriority.STATIC, "к"));
+TILE_LIST.addTile(new TileWH(96, 16, 16, 16, CollisionPriority.STATIC, "и"));
 
 /** Куст - kst*/
 TILE_LIST.addTile(new TileWH(16, 16, 16, 16, CollisionPriority.DISABLED, "k"));

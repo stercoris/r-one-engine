@@ -1,10 +1,12 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./src/mario/main.ts",
+  entry: "./mario/main.ts",
+  watch: true,
   module: {
     rules: [
       {
+        test: /\.ts$/,
         use: "ts-loader",
         exclude: /node_modules/,
       },
