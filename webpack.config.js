@@ -1,7 +1,7 @@
 const path = require("path");
-
+const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 module.exports = {
-  entry: "./mario/main.ts",
+  entry: "./games/mario/main.ts",
   watch: true,
   module: {
     rules: [
@@ -13,6 +13,11 @@ module.exports = {
     ],
   },
   resolve: {
+    plugins: [
+      new TsconfigPathsPlugin({
+        baseUrl: "./src",
+      }),
+    ],
     extensions: [".tsx", ".ts", ".js"],
   },
   output: {
