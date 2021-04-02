@@ -6,7 +6,7 @@ export class Entity {
   public id: number;
 
   /** Для отображения анимации */
-  private lifetime: number = 0;
+  private animationFrame: number = 0;
 
   /** Коллайдер добавляет сюда коллизии */
   public collisions: Collision[] = [];
@@ -104,40 +104,39 @@ export class Entity {
       this.current_frame
     ];
 
-    if (this.lifetime % this.current_animation.speed == 0) {
+    if (this.animationFrame % this.current_animation.speed == 0) {
       this.current_frame =
         ++this.current_frame >= this.current_animation.frames_count
           ? 0
           : this.current_frame;
     }
 
-    this.lifetime++;
+    this.animationFrame++;
 
     return current_animation_frame;
   }
 
-  getMidX() {
+  get MidX(): number {
     return this.position.x + this.position.w / 2;
   }
-  getMidY() {
+
+  get MidY() {
     return this.position.y + this.position.h / 2;
   }
-  getLeft() {
+  get Left() {
     return this.position.x;
   }
-  getTop() {
+  get Top() {
     return this.position.y;
   }
-  getRight() {
+  get Right() {
     return this.position.x + this.position.w;
   }
-  getBottom() {
+  get Bottom() {
     return this.position.y + this.position.h;
   }
   /** Возвращает длину прямой между серединой этого объекта и XY координатами*/
   getDif(x: number, y: number) {
-    return Math.sqrt(
-      Math.pow(x - this.getMidX(), 2) + Math.pow(y - this.getMidY(), 2)
-    );
+    return Math.sqrt(Math.pow(x - this.MidX, 2) + Math.pow(y - this.MidY, 2));
   }
 }

@@ -5,26 +5,15 @@ export class EntityArray extends Entity {
     let sample_tile = tiles[0];
 
     let w =
-      tiles
-        .reduce(
-          (maxX, object) =>
-            (maxX = object.getRight() > maxX.getRight() ? object : maxX)
-        )
-        .getRight() - sample_tile.getLeft();
+      tiles.reduce(
+        (maxX, object) => (maxX = object.Right > maxX.Right ? object : maxX)
+      ).Right - sample_tile.Left;
     let h =
-      tiles
-        .reduce(
-          (maxY, object) =>
-            (maxY = object.getBottom() > maxY.getBottom() ? object : maxY)
-        )
-        .getBottom() - sample_tile.getTop();
+      tiles.reduce(
+        (maxY, object) => (maxY = object.Bottom > maxY.Bottom ? object : maxY)
+      ).Bottom - sample_tile.Top;
 
-    let frame_position = new FrameWH(
-      sample_tile.getLeft(),
-      sample_tile.getTop(),
-      w,
-      h
-    );
+    let frame_position = new FrameWH(sample_tile.Left, sample_tile.Top, w, h);
 
     let render: HTMLCanvasElement = document.createElement("canvas");
     let ctx = render.getContext("2d");

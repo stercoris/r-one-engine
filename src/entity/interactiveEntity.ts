@@ -114,19 +114,19 @@ export class InteractiveEntity extends Entity {
       let slave = collision.slave;
       switch (collision.direction) {
         case Directions.RIGHT:
-          this.position.x = slave.getLeft() - this.position.w; //+ this.accelerationX;
+          this.position.x = slave.Left - this.position.w; //+ this.accelerationX;
           this.accelerationX = 0;
           break;
         case Directions.LEFT:
-          this.position.x = slave.getRight(); // + this.accelerationX;
+          this.position.x = slave.Right; // + this.accelerationX;
           this.accelerationX = 0;
           break;
         case Directions.TOP:
-          this.position.y = slave.getBottom(); //+ this.accelerationY;
+          this.position.y = slave.Bottom; //+ this.accelerationY;
           this.accelerationY = 0;
           break;
         case Directions.BOTTOM:
-          this.position.y = slave.getTop() - this.position.h; //+ this.accelerationY;
+          this.position.y = slave.Top - this.position.h; //+ this.accelerationY;
           this.accelerationY = 0;
           break;
       }

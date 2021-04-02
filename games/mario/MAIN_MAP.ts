@@ -34,7 +34,7 @@ TILE_LIST.addTile(new TileWH(48, 0, 16, 16, CollisionPriority.STATIC, "+")); //
  */
 
 TILE_LIST.addTile(new TileWH(64, 0, 16, 16, CollisionPriority.DISABLED, "о"));
-TILE_LIST.addTile(new TileWH(80, 0, 16, 16, CollisionPriority.STATIC, "б"));
+TILE_LIST.addTile(new TileWH(80, 0, 16, 16, CollisionPriority.DISABLED, "б"));
 TILE_LIST.addTile(new TileWH(96, 0, 16, 16, CollisionPriority.DISABLED, "л"));
 TILE_LIST.addTile(new TileWH(64, 16, 16, 16, CollisionPriority.STATIC, "а"));
 TILE_LIST.addTile(new TileWH(80, 16, 16, 16, CollisionPriority.STATIC, "к"));

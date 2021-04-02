@@ -39,10 +39,10 @@ export class EntityCollider {
             collided.id != object.id &&
             collided.collision_priority != CollisionPriority.DISABLED
           ) {
-            let l_dif = object.getLeft() - collided.getRight();
-            let r_dif = collided.getLeft() - object.getRight();
-            let t_dif = object.getTop() - collided.getBottom();
-            let b_dif = collided.getTop() - object.getBottom();
+            let l_dif = object.Left - collided.Right;
+            let r_dif = collided.Left - object.Right;
+            let t_dif = object.Top - collided.Bottom;
+            let b_dif = collided.Top - object.Bottom;
 
             if (l_dif < 0 && r_dif < 0 && t_dif < 0 && b_dif < 0) {
               let dir = undefined;

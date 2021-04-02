@@ -35,15 +35,15 @@ export class GameMap {
   async draw() {
     this.entities.forEach((obj) => {
       if (
-        obj.getLeft() <= this.position.w + obj.position.w &&
-        obj.getTop() <= this.position.h + obj.position.h &&
-        obj.getRight() >= 0 &&
-        obj.getBottom() >= 0
+        obj.Left <= this.position.w + obj.position.w &&
+        obj.Top <= this.position.h + obj.position.h &&
+        obj.Right >= 0 &&
+        obj.Bottom >= 0
       ) {
         obj.draw(this.context);
       }
     });
-    await this.follow();
+    this.follow();
   }
 
   clear() {
@@ -55,7 +55,7 @@ export class GameMap {
     this.position.y += y;
   }
 
-  async follow() {
+  follow() {
     if (this.follow_params) {
       switch (this.follow_params.follow_method) {
         case FollowMehod.SlowReaction:

@@ -1,4 +1,4 @@
-import { InteractiveEntity, Frame, FrameWH } from "@Entities";
+import { InteractiveEntity, Frame, FrameWH, Entity } from "@Entities";
 import { CollisionPriority, Directions, EntityCollider } from "@Collider";
 import { TileMap } from "@Map";
 import { PRESSED } from "@ArrowsControl";
@@ -19,7 +19,7 @@ let timon = document.getElementById("timonImg") as HTMLImageElement;
 let mario = document.getElementById("mario") as HTMLImageElement;
 
 /** Глобальные компоненты */
-let TIMON: InteractiveEntity;
+let TIMON: Entity;
 let MAP: TileMap;
 let Collider: EntityCollider;
 let MARIO: InteractiveEntity;
@@ -46,7 +46,16 @@ document.body.onload = function setup() {
   );
   MAP.setPointer(MARIO, FOLLOW_PARAMS);
 
-  //Collider.add(TIMON);
+  TIMON = new Entity(
+    timon,
+    new FrameWH(50, 59, 100, 100),
+    CollisionPriority.STATIC,
+    null,
+    new Frame(0, 0, 100, 100)
+  );
+  MAP.addEntity(TIMON);
+
+  Collider.add(TIMON);
   Collider.add(MARIO);
   setInterval(logic, 15);
 };
