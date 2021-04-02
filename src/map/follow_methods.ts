@@ -1,6 +1,5 @@
-import { Directions } from "../collider/directions";
-import { Entity } from "../entity/entity";
-import { Frame } from "../entity/frame";
+import { Directions } from "@Collider";
+import { Entity, Frame } from "@Entities";
 
 export class FollowParams {
   constructor(private game_area: Frame, public follow_method: FollowMehod) {}

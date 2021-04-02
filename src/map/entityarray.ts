@@ -1,4 +1,4 @@
-import { Entity, FrameWH } from "../entity/entities";
+import { Entity, FrameWH } from "@Entities";
 
 export class EntityArray extends Entity {
   constructor(tiles: Entity[]) {

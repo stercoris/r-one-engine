@@ -1,8 +1,7 @@
-import { InteractiveEntity, Frame, FrameWH } from "../entity/entities";
-import { CollisionPriority, Directions } from "../collider/collisions";
-import { TileMap } from "../map/maps";
-import { PRESSED } from "../movment/arrows";
-import { EntityCollider } from "../collider/collider";
+import { InteractiveEntity, Frame, FrameWH } from "@Entities";
+import { CollisionPriority, Directions, EntityCollider } from "@Collider";
+import { TileMap } from "@Map";
+import { PRESSED } from "@ArrowsControl";
 
 // импорт не из движка //
 import { GAME_MAP, TILE_LIST } from "./MAIN_MAP";

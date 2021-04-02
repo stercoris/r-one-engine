@@ -1,5 +1,5 @@
-import { EntityAnimation, Frame, FrameWH } from "./entities";
-import { Collision, CollisionPriority } from "../collider/collisions";
+import { EntityAnimation, Frame, FrameWH } from "@Entities";
+import { Collision, CollisionPriority } from "@Collider";
 
 export class Entity {
   // Используется в коллайдере

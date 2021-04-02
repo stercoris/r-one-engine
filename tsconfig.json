@@ -6,6 +6,14 @@
     "outDir": "./dist/",
     //"outDir": "D:\\R ONE ENGINE\\compiled",
     "sourceMap": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "baseUrl": "./src",
+    "paths": {
+      "@R1engine/*": ["*"],
+      "@Collider": ["collider/collisions"],
+      "@Entities": ["entity/entities"],
+      "@Map": ["map/maps"],
+      "@ArrowsControl": ["movement/arrows"]
+    }
   }
 }

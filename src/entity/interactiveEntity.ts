@@ -1,4 +1,4 @@
-import { Entity, EntityAnimation, FrameWH, Frame } from "./entities";
+import { Entity, EntityAnimation, FrameWH, Frame } from "@Entities";
 import {
   Collision,
   CollisionPriority,

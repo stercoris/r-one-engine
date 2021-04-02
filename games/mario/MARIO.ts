@@ -1,10 +1,5 @@
-import {
-  EntityAnimation,
-  FrameWH,
-  AnimationIds,
-  Frame,
-} from "../entity/entities";
-import { FollowParams, FollowMehod } from "../map/follow_methods";
+import { EntityAnimation, FrameWH, AnimationIds, Frame } from "@Entities";
+import { FollowParams, FollowMehod } from "@Map";
 
 export class MarioAnimationsIds extends AnimationIds {
   // Сюда новые анимации втавлять

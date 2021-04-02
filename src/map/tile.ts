@@ -1,5 +1,5 @@
-import { Collision, CollisionPriority } from "../collider/collisions";
-import { Frame, FrameWH } from "../entity/entities";
+import { Collision, CollisionPriority } from "@Collider";
+import { Frame, FrameWH } from "@Entities";
 
 /** Хранит информацию о тайле */
 class Tile extends Frame {

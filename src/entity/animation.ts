@@ -1,5 +1,4 @@
-import { Frame, FrameWH } from "./entities";
-import { AnimationIds } from "./animationids";
+import { Frame, FrameWH, AnimationIds } from "@Entities";
 
 export class EntityAnimation {
   public id: AnimationIds;

@@ -1,4 +1,4 @@
-import { Tile, TileWH } from "./maps";
+import { Tile, TileWH } from "@Map";
 
 export class TileList {
   private tiles: Tile[] = [];

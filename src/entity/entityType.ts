@@ -1,5 +1,3 @@
-import {} from "./entities";
-
 //TODO: Чё эта?
 export enum EntityType {
   MAP_TILE = 0,

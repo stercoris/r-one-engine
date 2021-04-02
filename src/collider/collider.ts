@@ -1,7 +1,5 @@
-import { Entity } from "../entity/entity";
-import { Collision } from "./collision";
-import { CollisionPriority } from "./collisionPriority";
-import { Directions } from "./directions";
+import { Entity } from "@Entities";
+import { Collision, CollisionPriority, Directions } from "@Collider";
 
 export class EntityCollider {
   private objectpull: Entity[];

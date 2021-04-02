@@ -1,5 +1,5 @@
-import { TileList, TileWH } from "../map/maps";
-import { CollisionPriority } from "../collider/collisionPriority";
+import { TileList, TileWH } from "@Map";
+import { CollisionPriority } from "@Collider";
 
 let GAME_MAP = `
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||

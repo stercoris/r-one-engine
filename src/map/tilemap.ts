@@ -1,6 +1,6 @@
-import { GameMap, TileList } from "./maps";
-import { Entity, Frame, FrameWH } from "../entity/entities";
-import { EntityArray } from "./entityarray";
+import { GameMap, TileList } from "@Map";
+import { Entity, Frame, FrameWH } from "@Entities";
+import { EntityArray } from "@Map";
 
 export class TileMap extends GameMap {
   public texture: HTMLImageElement;

@@ -1,5 +1,5 @@
-import { Entity } from "../entity/entities";
-import { Directions } from "./collisions";
+import { Entity } from "@Entities";
+import { Directions } from "@Collider";
 
 /**  */
 export class Collision {

@@ -1,7 +1,6 @@
-import {} from "./maps";
-import { Entity, Frame, FrameWH, InteractiveEntity } from "../entity/entities";
-import { FollowParams, FollowMehod } from "./follow_methods";
-import { Directions } from "../collider/directions";
+import { Entity, Frame, FrameWH, InteractiveEntity } from "@Entities";
+import { FollowParams, FollowMehod } from "@Map";
+import { Directions } from "@Collider";
 
 export class GameMap {
   public entities: Entity[] = [];

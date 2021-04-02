@@ -1,4 +1,4 @@
-import { EntityAnimation, FrameWH, AnimationIds } from "../entity/entities";
+import { EntityAnimation, FrameWH, AnimationIds } from "@Entities";
 
 export let TIMON_ANIMATIONS = [
   new EntityAnimation(AnimationIds.IDLE, 12, [
