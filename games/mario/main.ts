@@ -19,7 +19,6 @@ let timon = document.getElementById("timonImg") as HTMLImageElement;
 let mario = document.getElementById("mario") as HTMLImageElement;
 
 /** Глобальные компоненты */
-let TIMON: Entity;
 let MAP: TileMap;
 let Collider: EntityCollider;
 let MARIO: InteractiveEntity;
@@ -33,7 +32,6 @@ document.body.onload = function setup() {
     Collider.add(tile);
   });
 
-  //TIMON = new InteractiveEntity(7, 4, timon, new FrameWH(200,200,50,50), CollisionPriority.ENABLED, undefined, TIMON_ANIMATIONS);
   MARIO = new InteractiveEntity(
     3,
     4,
@@ -45,17 +43,6 @@ document.body.onload = function setup() {
     MARIO_ANIMATIONS
   );
   MAP.setPointer(MARIO, FOLLOW_PARAMS);
-
-  TIMON = new Entity(
-    timon,
-    new FrameWH(50, 59, 100, 100),
-    CollisionPriority.STATIC,
-    null,
-    new Frame(0, 0, 100, 100)
-  );
-  MAP.addEntity(TIMON);
-
-  Collider.add(TIMON);
   Collider.add(MARIO);
   setInterval(logic, 15);
 };
