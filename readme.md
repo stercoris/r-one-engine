@@ -1,4 +1,5 @@
-# Наверное что то интересное, но не особо.
-## Моё вступление в тайпскрипт!!
+# My Indroduction into typescript
 
-### [Пример игры на "движке"](http://wrongdoor.ddns.net/r1engine/mario/) (Возможно надо будет обновить несколько раз для запуска)
+### Simple `game` engine with some `webpack` bundling
+
+![image](https://user-images.githubusercontent.com/59175552/138614141-fe9709b8-bca1-49cf-99d2-4b44b29d3dcd.png)
